@@ -8,20 +8,43 @@ main: ![Build Status](https://github.com/Tmarndt1/XReflect/workflows/.NET/badge.
 
 If you like or are using this project please give it a star. Thanks!
 
-## Example
+## Basic Example
 
 ```csharp
 
 Mapper<Student> mapper = new Mapper<Student>(builder =>
 {
     builder
-        .Map(x => x.Teachers)
-            .When((a, b) => a.Id == b.Id)
-        .Access(x => x.Teachers)
-            .Map(x => x.Classroom)
-                .When((a, b) => a.Id == b.Id);
+        .Map(x => x.Teachers) // Maps the Teachers collection.
+            .When((a, b) => a.Id == b.Id) // Maps the Teacher object when the Id property matches.
+        .Access(x => x.Teachers) // Access the Teachers collection.
+            .Map(x => x.Classroom) // Maps the Classroom object on the Teachers collection
+                .When((a, b) => a.Id == b.Id) // Maps the Classroom object when the Id property matches.
 });
 
+mapper.Run(student1, student2);
+
+```
+
+## Configuration Example
+
+```csharp
+
+Mapper<Student> mapper = new Mapper<Student>((builder =>
+{
+    builder
+        .Map(x => x.Teachers) // Maps the Teachers collection.
+            .When((a, b) => a.Id == b.Id) // Maps the Teacher object when the Id property matches.
+        .Configure(new XReflectConfiguration()
+        {
+            // If no configuration is provided the default option is AddRemove.
+            CollectionOption = CollectionOption.Add, // Will only add new objects and won't remove existing in collection.
+            IgnoreNull = false // Will ignore null values in a source's collection while mapping.
+        });
+}));
+
+
+// Act
 mapper.Run(student1, student2);
 
 ```
