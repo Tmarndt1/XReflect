@@ -8,7 +8,7 @@ namespace XReflect
     {
         public static IAccessor<T, TProperty> Access<T, TProperty>(this IBuilder<T> builder, Expression<Func<T, TProperty>> expression)
             where T : class
-            where TProperty : class, IXReflectEntity
+            where TProperty : class
         {
             builder.Aggregator.Enqueue(expression);
 
@@ -25,7 +25,7 @@ namespace XReflect
         }
 
         public static IAccessorNext<T, TProperty> Map<T, TProperty>(this IBuilder<T> builder, Expression<Func<T, TProperty>> expression)
-            where T : class, IXReflectEntity
+            where T : class
             where TProperty : class
         {
             builder.Aggregator.Enqueue(expression);

@@ -1,6 +1,6 @@
 ﻿namespace XReflect.Test
 {
-    public class Classroom : IXReflectEntity
+    public class Classroom
     {
         public int Id { get; set; }
 
