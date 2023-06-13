@@ -12,7 +12,7 @@ If you like or are using this project please give it a star. Thanks!
 
 ```csharp
 
-Mapper<Student> mapper = new Mapper<Student>(builder =>
+XMapper<Student> mapper = new XMapper<Student>(builder =>
 {
     builder
         .Map(x => x.Teachers) // Maps the Teachers collection.
@@ -30,7 +30,7 @@ mapper.Run(student1, student2);
 
 ```csharp
 
-Mapper<Student> mapper = new Mapper<Student>((builder =>
+XMapper<Student> mapper = new XMapper<Student>((builder =>
 {
     builder
         .Map(x => x.Teachers) // Maps the Teachers collection.
