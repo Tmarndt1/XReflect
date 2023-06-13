@@ -37,8 +37,9 @@ Mapper<Student> mapper = new Mapper<Student>((builder =>
             .When((a, b) => a.Id == b.Id) // Maps the Teacher object when the Id property matches.
         .Configure(new XReflectConfiguration()
         {
-            // If no configuration is provided the default option is AddRemove.
+            // Default configuration is AddRemove.
             CollectionOption = CollectionOption.Add, // Will only add new objects and won't remove existing in collection.
+            // Default configuration is true.
             IgnoreNull = false // Will ignore null values in a source's collection while mapping.
         });
 }));
