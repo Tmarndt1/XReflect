@@ -2,7 +2,7 @@
 
 namespace XReflect
 {
-    public class Mapper<T> 
+    public class XMapper<T> 
         where T : class
     {
         private readonly Builder<T> _builder = new Builder<T>();
@@ -16,7 +16,7 @@ namespace XReflect
             return _builder.Run(source, target);
         }
 
-        public Mapper(Action<IBuilder<T>> action)
+        public XMapper(Action<IBuilder<T>> action)
         {
             if (action == null) throw new ArgumentNullException(nameof(action));
 

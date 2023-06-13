@@ -46,7 +46,7 @@ namespace XReflect.Test
                 }
             };
 
-            Mapper<Student> mapper = new Mapper<Student>(builder =>
+            XMapper<Student> mapper = new XMapper<Student>(builder =>
             {
                 builder
                     .Map(x => x.Teachers)
@@ -106,7 +106,7 @@ namespace XReflect.Test
                 }
             };
 
-            Mapper<Student> mapper = new Mapper<Student>((builder =>
+            XMapper<Student> mapper = new XMapper<Student>((builder =>
             {
                 builder
                     .Map(x => x.Teachers).When((a, b) =>
