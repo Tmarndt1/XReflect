@@ -10,6 +10,15 @@ To ensure that the references to the entities are maintained during modification
 
 main: ![Build Status](https://github.com/Tmarndt1/XReflect/workflows/.NET/badge.svg?branch=main)
 
+## Features
+* Features
+* Simple and intuitive API for defining mapping rules
+* Support for mapping properties at different levels of object hierarchy
+* Conditional mapping based on custom predicates
+* Ignoring properties during mapping
+* Easy integration into existing projects
+* Lightweight and performant
+
 ## Give a Star! :star:
 
 If you like or are using this project please give it a star. Thanks!
