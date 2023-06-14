@@ -23,6 +23,13 @@ If you like or are using this project please give it a star. Thanks!
 * Easy integration into existing projects
 * Lightweight and performant
 
+## Usage
+To use XReflect in your project, follow these steps:
+
+1. Define your source and destination objects.
+2. Configure the mapping rules using the XMapper fluent API.
+3. Perform the object mapping using the Run method.
+
 ## Basic Example
 In this example, a `Student` has a `Teachers` collection and the `Teacher` has a related `Classroom` entity. 
 <br/>
