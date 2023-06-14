@@ -10,6 +10,10 @@ To ensure that the references to the entities are maintained during modification
 
 main: ![Build Status](https://github.com/Tmarndt1/XReflect/workflows/.NET/badge.svg?branch=main)
 
+## Give a Star! :star:
+
+If you like or are using this project please give it a star. Thanks!
+
 ## Features
 * Features
 * Simple and intuitive API for defining mapping rules
@@ -18,10 +22,6 @@ main: ![Build Status](https://github.com/Tmarndt1/XReflect/workflows/.NET/badge.
 * Ignoring properties during mapping
 * Easy integration into existing projects
 * Lightweight and performant
-
-## Give a Star! :star:
-
-If you like or are using this project please give it a star. Thanks!
 
 ## Basic Example
 In this example, a `Student` has a `Teachers` collection and the `Teacher` has a related `Classroom` entity. 
