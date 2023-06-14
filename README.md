@@ -12,7 +12,9 @@ main: ![Build Status](https://github.com/Tmarndt1/XReflect/workflows/.NET/badge.
 If you like or are using this project please give it a star. Thanks!
 
 ## Basic Example
-
+In this example, a `Student` has a Teachers collection of type `Teacher`. The `Teacher` has a related entity Classroom of type `Classroom`.
+<br/>
+When mapping the source `student1` to the target `student2` the references in memory on `student2` will remain unchanged. 
 ```csharp
 
 XMapper<Student> mapper = new XMapper<Student>(builder =>
