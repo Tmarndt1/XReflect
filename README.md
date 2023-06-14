@@ -32,7 +32,7 @@ mapper.Run(student1, student2);
 ```
 
 ## Configuration Example
-In this example, the same relationships exist as the Basic Example between `Student`, `Teacher`, and `Classroom`. 
+In this example, the same relationships exist as the **Basic Example** between `Student`, `Teacher`, and `Classroom`. 
 <br/>
 The XReflect configuration can be modified by specifying to only add new entities through `CollectionOption.Add`.
 <br/>
