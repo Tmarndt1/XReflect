@@ -79,6 +79,8 @@ XMapper<Student> mapper = new XMapper<Student>((builder =>
 mapper.Run(student1, student2);
 
 ```
+## Contributing
+Contributions to XReflect are welcome! If you find any issues or have suggestions for improvements, please create a new issue or submit a pull request.
 
 ## Authors
 
