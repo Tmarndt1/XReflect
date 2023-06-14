@@ -3,7 +3,7 @@
 XReflect is a C# .NET explicit mapping library that retains a target object's reference. 
 <br/>
 <br/>
-When retrieving an object from an ORM like EntityFramework, typically the ORM tracks the entity and any related entity for efficiency to detect changes that are made and build the query. Therefore, it is critical to maintain the reference to the entity and any related entity when making changes. Through configuration, XReflect has the ability to modify collections by adding, and or removing entities from the persistance layer.
+When retrieving an object from an ORM like EntityFramework, typically the ORM tracks the entity and any related entities for efficiency to detect changes that are made and build the query. Therefore, it is critical to maintain the reference to the entities when making changes. Through configuration, XReflect has the ability to modify collections by adding, and or removing entities from the persistance layer.
 
 main: ![Build Status](https://github.com/Tmarndt1/XReflect/workflows/.NET/badge.svg?branch=main)
 
