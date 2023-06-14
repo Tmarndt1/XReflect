@@ -32,7 +32,13 @@ mapper.Run(student1, student2);
 ```
 
 ## Configuration Example
-
+In this example, the same relationships exist as the Basic Example between `Student`, `Teacher`, and `Classroom`. 
+<br/>
+The XReflect configuration can be modified by specifying to only add new entities through `CollectionOption.Add` and refrain to removing entities in collections.
+<br/>
+The XReflect configuration can be modified by specifying to only remove new entities through `CollectionOption.Remove` and refrain to adding new entities in collections.
+<br/>
+By default the XReflect configuration is `CollectionOption.Remove` which adds and removes entities in collections.
 ```csharp
 
 XMapper<Student> mapper = new XMapper<Student>((builder =>
